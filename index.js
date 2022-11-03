@@ -3,6 +3,7 @@ const apps = express();
 const passport = require("passport");
 const sessionExpress = require("express-session");
 require("./config/passport");
+require("dotenv").config();
 const db = require("./models");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");

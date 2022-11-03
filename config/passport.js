@@ -4,8 +4,8 @@ const { Strategy } = require("passport-google-oauth2");
 
 passport.use(new Strategy(
     {
-    clientID: "893318771586-th48sbci11sab8a112iojoc1k5e1n722.apps.googleusercontent.com",
-    clientSecret: "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",
+    clientID: process.env.PASSPORT_CLIENT_ID,
+    clientSecret: process.env.PASSPORT_CLIENT_SECRET,
     callbackURL: "https://deploybacke.herokuapp.com/api/v1/auth/google",
     passReqToCallback: true
     },
